@@ -1,0 +1,640 @@
+/* #bbnet is <td> in browser display, <div> when printing */
+#bbnet { position: relative; }
+/* browser display */
+#bbnet table.internetcanvas { margin: 0 1px; width: 360px; }
+/* printing display */
+#bbnet.bbnetprint { float: left; /* to avoid page break before content in ie7 */ }
+#bbnet.bbnetprint table.internetcanvas { margin: 0; width: 485px; }
+/* the distance from the header to the content */
+#bbnet td.headerdistance { height: 25px; }
+#bbnet table td.header { padding: 0 3px; height: 36px; width: 100%; }
+/* colors for the header */
+#bbnet table.gruen td.header { background-color: #99CC66; }
+#bbnet table.pink td.header { background-color: #660033; }
+#bbnet table.grau td.header { background-color: #99CC33; }
+#bbnet table.blue td.header { background-color: #99CC33; }
+#bbnet table.gelb td.header { background-color: #99CC33; }
+#bbnet table.hell_gelb td.header { background-color: #ffffcc; vertical-align:middle;}
+#bbnet table.light_pink td.header { background-color: #FFCC00 ; }
+#bbnet img { padding: 0; margin: 0; border: 0; }
+#bbnet form { padding: 0; margin: 0; }
+#bbnet table { margin: 0; padding: 0; }
+
+/* do not add default align top because of title in header */
+#bbnet table table table td { vertical-align: top; text-align: left; }
+#bbnet #floatLayer { position: absolute; width: 115px; left: 2px; top: 65px; z-index: 1; overflow: hidden;}
+#bbnet #floatLayer table { width: 115px; float: right; overflow: hidden;}
+#bbnet #floatLayer table td { width: 115px; vertical-align: top; text-align: right;}
+#bbnet #floatLayer table td a { float: right; width: 115px; padding: 0; margin: 0; font-size: 90%; font-weight: normal;}
+
+#bbnet h2 { padding: 0; margin: 0; margin-top: 10px; padding-right: 10px; display: block; clear: both; font-size: 13px; }
+#bbnet.bbnetprint h2 { font-size: 12pt; font-weight: bold; }
+#bbnet h2.first { margin-top: 0; }
+#bbnet a {}
+
+#bbnet table table { width: 360px; }
+#bbnet table td.marginal { width: 140px; padding-top: 16px; height: 400px; vertical-align: top; text-align: left; }
+#bbnet table td.marginal a { font-weight: normal; }
+#bbnet table td.marginal table { width: 140px; }
+#bbnet table td.marginal table tr.print { height: 30px; }
+#bbnet table td.marginal table tr.print a { font-weight: bold; }
+
+/* DO NOT USE padding-bottom, it causes print bug in IE */
+#bbnet div.text { margin-bottom: 10px; padding-right: 10px; display: block; clear: both; }
+#bbnet div.title-02-black
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    margin-bottom:0px;
+}
+
+#bbnet div.text-context-bold
+{
+    font-size:11px;
+    font-weight:bold;
+    font-family:Arial, Helvetic, Sans-Serif;
+    margin-bottom:0px;
+}
+
+#bbnet div.text-context
+{
+    font-size:10px;
+    font-weight:normal;
+    font-family:Arial, Helvetic, Sans-Serif;
+    margin-bottom:0px;
+}
+
+/*#bbnet div.text ul { margin: 0 0 5px 5px; padding: 0 0 0 5px; }
+#bbnet div.text ul { margin-left: 0px; padding-left:0px; }*/
+
+/*#bbnet div.text ul li { margin: 0 0 0 2px; padding: 0 0 0 0; list-style-image:url(../images_icare/flechette.gif);}*/
+
+
+#bbnet div.text ul
+{
+	margin: 0 0 0 15; 
+	padding: 0 0 0 15; 
+	/*display:list-item;*/
+	list-style-image:url(../images_icare/flechette.gif);
+	list-style-position:outside;
+	/*list-style-type:circle;*/
+}
+
+/* list a puce pour page error */
+.error404 
+{
+	_margin: 0 0 0 15; 
+	_padding: 0 0 0 0; 
+	/*display:list-item;*/
+	list-style-image:url(../images_icare/flechette.gif);
+	list-style-position:outside;
+	/*list-style-type:circle;*/
+}
+
+
+/*#bbnet div.infop ul li { margin-left: 5px; padding-left: 0px; list-style-image:url(../images_icare/flechette.gif); }*/
+#bbnet div.text_form { padding-bottom: 0px; padding-top: 0px; padding-right: 10px; display: block; clear: both; }
+#bbnet div.text_form_inline { padding-bottom: 0px; padding-top: 0px; padding-right: 10px; display: inline; clear: both; }
+#bbnet div.text div.titel { font-weight: bold; padding-bottom: 5px; }
+#bbnet div.text div.lead { font-weight: bold; padding-bottom: 5px; }
+#bbnet div.text div.abschnitt { padding-bottom: 5px; }
+#bbnet div.text div.bbi_information a { display: block; }
+#bbnet div.text .portraitimage { float: right; margin-left: 10px; margin-bottom: 10px; }
+
+/* jf 24.11.2008 */
+#bbnet div.schooltype 
+{
+/*	margin-bottom: 3px; 
+	padding-right: 5px; */
+	display: inline; 
+	clear:none;
+	font-weight: bold; 
+	font-size: 11px; 
+	color: #000000; 
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+#bbnet table.searchcomponent { padding-bottom: 10px; }
+#bbnet a.link { display: block; clear: both; padding-bottom: 3px; }
+
+#bbnet div.bbnetprint a { font-weight: normal; color: black; text-decoration: none; }
+#bbnet div.bbnetprint a:hover { color: black; text-decoration: none; }
+
+#bbnet h2.subtitle { display: block; clear: both; }
+#bbnet table.searchcomponent td.searchbutton { width: 60%; }
+#bbnet td.searchbutton_form button { font-weight: bold; float: left; text-align: left; padding: 0px 0 0 5px; margin: 0px; width: auto; background-color: transparent; border: none; cursor: pointer; overflow: visible; }
+#bbnet button.searchbutton { font-weight: bold; float: left; text-align: left; padding: 5px 0 0 5px; margin: 0px; width: auto; background-color: transparent; border: none; cursor: pointer; overflow: visible; }
+
+#bbnet table.searchabccomponent { margin-bottom: 5px; }
+#bbnet table.searchabccomponent td.marginal { height: auto; }
+#bbnet table.searchabccomponent td.marginal a { font-weight: bold }
+#bbnet table.searchabccomponent td { padding: 0; margin: 0; width: 100%; }
+
+#bbnet div.treecomponent { width: 100%; clear: both; }
+#bbnet div.treecomponent img { cursor: pointer; float: left; margin: 0; padding: 0; }
+#bbnet div.treecomponent div.treecomponentitemindent div { padding-left: 16px; }
+#bbnet div.treecomponent a { display: block; padding-bottom: 0px;}
+#bbnet div.treecomponent a.treecomponentitem { cursor: pointer; padding-left: 16px;}
+#bbnet div.treecomponent div.treecomponentitemindent a.treecomponentitem { padding-left: 0px; }
+#bbnet div.treecomponent ul { padding: 0 0 0 16px; margin: 0; list-style-type: none; }
+#bbnet div.treecomponent ul li { padding: 2px 0; margin: 0; list-style-type: none; }
+
+#bbnet div.moviecomponent { /*padding-left: 2px;*/ }
+#bbnet div.moviecomponent div.text { padding-bottom: 50px; }
+#bbnet div.moviecomponent div.player { padding-bottom: 5px; }
+#bbnet form input, #bbnet form select { margin-bottom: 5px; }
+#bbnet form select { max-width: 250px; width: 250px; } 
+
+#bbnet .checkboxcomponent { padding-bottom:5px;display:block;width:100%;margin:0;padding:0;}
+#bbnet .checkboxcomponent div { float:left;width:100%;margin:0;padding:0;}
+#bbnet .checkboxcomponent div div { clear: both; float: left; width: 100%; }
+#bbnet .checkboxcomponent div input {float:left;}
+#bbnet .checkboxcomponent div label { margin:0;padding:0; width: auto; float: left;} /*padding-top: 2px; margin-left: 2px;*/
+#bbnet .checkboxcomponent div a { margin:0;padding:0; width: auto; float: none;} /* LM 30.08.2011 TODO 1276-1708: Uni Info, compare selected */
+#bbnet .floatleft div { float: left; clear: none; padding-right: 10px; width: auto; }
+#bbnet .floatleft div input { margin: 0; padding: 0; }
+#bbnet .floatleft div label { display: inline; width: auto; white-space: nowrap; }
+
+#bbnet div.separator { width: 100%; height: 1px; line-height: 1px; font-size: 1px; display: block; clear: both; margin-bottom: 10px; overflow: hidden; }
+
+/* maps */
+#bbnet div.chmapcomponent, #bbnet div.chregionmapcomponent { display: block; clear: both; padding-bottom: 10px; }
+#bbnet div.chmapcomponent div.country { position: relative; z-index: 1; top: 0px; left: 0px; width: 350px; height: 222px; overflow: hidden; }
+/* #bbnet div.chmapcomponent div.county { position: absolute; top: 0px; left: 0px; width: 350px; height: 222px; } */
+#bbnet div.chmapcomponent div.county img { position: absolute; top: 0px; left: 0px; }
+/* #bbnet div.chmapcomponent div.chmapcheckboxwrapper { width: 380px; } */
+div#bbnet.bbnetprint div.chmapcomponent, div#bbnet.bbnetprint div.chregionmapcomponent { display: none; }
+
+#bbnet div.edocchmapcomponent { display: block; clear: both; padding-bottom: 10px; }
+#bbnet div.edocchmapcomponent div.country { position: relative; z-index: 1; top: 0px; left: 0px; width: 350px; height: 222px; overflow: hidden; }
+#bbnet div.edocchmapcomponent div.county img { position: absolute; top: 0px; left: 0px; }
+
+
+/* wab/pdoc */
+#bbnet .wablist { width: 100%; }
+#bbnet .wablist td { text-align: left; vertical-align: top; padding-right: 10px; }
+#bbnet .wablist td a + a { margin-top: -3px; }
+#bbnet .wablist td br + a { margin-top: 5px; }
+
+#bbnet .wablist th { text-align: left; font-weight: bold; font-size: 13px; background-color: #99CC66; }
+#bbnet .wablist tr.item td { padding: 5px 5px 0 0; border-top: 1px solid #99CC66; }
+#bbnet .wabdetail tr td { padding: 0 0 2px 0; }
+#bbnet .wabdetail tr.item td { padding: 2px 0 0 0; border-top: 1px solid #99CC66; }
+#bbnet div.warning { font-weight: bold; background-image: url(../images/ico_error.gif); background-repeat: no-repeat; background-position: 0 1px; color: red; padding: 2px 2px 2px 20px; margin: 0 0 10px; }
+#bbnet div.hidden { DISPLAY: none; }
+#bbnet .wabinstlist td { padding-bottom: 3px; text-align: left; vertical-align: top; }
+#bbnet .wabinstlist td.counter { padding: 0 5px; text-align: right; vertical-align: top; font-weight: bold; }
+#bbnet img.wabcertificate { border: none; margin: 5px 10px 5px 0; }
+#bbnet div.wabfooter { margin-top: 12px; }
+#bbnet table.classes th { text-align: center; font-weight: bold; font-size: 11px; background-color: #99CC66; border-right: 2px solid white; padding: 2px; }
+#bbnet table.classes td { border-top: 2px solid white; border-right: 2px solid white; background-color: #CCFF99; vertical-align: middle; padding: 2px; }
+#bbnet table.classes tr.even td { background-color: #DDFFBB; }
+#bbnet div.wablabel { padding-bottom: 1px; padding-top: 8px; }
+#bbnet td.marginal a.resetlink { font-weight: bold; margin-bottom: 15px; }
+#bbnet form.wabextsearch td.label { width: 120px; }
+#bbnet form.wabextsearch td.textfield, #bbnet form.wabextsearch td.textfield input { width: 240px; }
+#bbnet form.wabextsearch td select { width: 360px; max-width: 360px; }
+#bbnet .searchcomponent .checkboxcomponent_width_90 label {width:90%;}
+
+/* used in link list */
+#bbnet.grau .wablist th { background-color: #99CCCC; }
+#bbnet.grau .wablist tr.item td { border-top-color: #99CCCC; }
+#bbnet ul.wabhierarchy { margin: 0 0 5px; padding: 0 0 0 18px; }
+#bbnet ul.wabhierarchy li { margin: 0; padding: 0; }
+.overlib-font { color: #333333; }
+.overlib-background { background-color: #949494; }
+.overlib-foreground { background-color: #FFFFDF; }
+
+#bbnet div.apprenticeships_prof { display: table; clear: both; width: 100%; padding-top: 8px; }
+#bbnet div.apprenticeships_prof div.left { float: left; width: 250px; font-weight: bold; }
+#bbnet div.apprenticeships_prof div.right { float: right; width: 75px; }
+#bbnet div.apprenticeships_prof div.right a, #bbnet div.apprenticeships_prof div.right div.text { width: 100%; padding: 0; margin: 0; white-space: nowrap; }
+#bbnet div.apprenticeships_prof div.right a div, #bbnet div.apprenticeships_prof div.right div.text div { display: block; width: 50px; float: left; height: 1em; }
+
+#bbnet table.apprenticeships_export_table { width: 900px; }
+#bbnet table.apprenticeships_export_table th { vertical-align: top; font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; }
+#bbnet table.apprenticeships_export_table td { vertical-align: top; border: 0; border-left: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; }
+
+/* jf 24.11.2008 */
+#bbnet .light_pink { background-color: #FFCCCC; }
+#bbemailpreview { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; color: #000000; font-size: 11px; }
+#bbemailpreview h1.bbemailpreview { font-size: 13px; font-weight: bold; }
+#bbemailpreview h2.bbemailpreview { font-size: 13px; }
+
+#bbnet div.uni_text h1 {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+h1.bb_errorctx {
+  background-color: red; 
+  padding: 10px;
+}
+
+
+#logbook h2 {
+  margin: 0;
+  padding: 2px;
+}
+#logbook h2 div {
+  display: table;
+  width: 100%;
+}
+#logbook h2 div div {
+    width: auto;
+}
+div#bbnet.bbnetprint #logbook h2 a {
+  font-weight:bold;
+}
+#logbook h2 div div a.handle {
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+#logbook h3 {
+  margin: 0;
+  padding: 0;
+  clear: none;
+  float: left;
+  padding-right: 5px;
+  font-weight: bold;
+  font-size: 11px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif
+}
+#logbook div table {
+  width: 560px;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#logbook div table td {
+  margin: 0;
+  padding: 0;
+  width: 270px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  vertical-align: top;
+  border: 0;
+}
+#logbook div table tr.separator td {
+  border-bottom: 2px solid #EFEFEF; 
+}
+#logbook table tr.separator td td{
+  border: 0;
+}
+#logbook table td.buttons {
+  padding-top: 5px;
+}
+#logbook table tr.cloneable td {
+	width:100%;
+}
+#logbook table tr.cloneable td table {
+  margin: 0;
+  padding: 0;
+}
+#logbook table tr.cloneable td td {
+  border: 0;
+}
+#logbook input, textarea, select {
+  margin: 0;
+  padding: 0;
+  width: 270px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+#logbook input.testresult, textarea.testresult {
+  width: 180px;
+}
+
+#logbook div.mainnav {
+  width: 560px;
+}
+
+#logbook table.inner {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#logbook table.inner tr td {
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#logbook table.inner input {
+  display: inline;
+}
+#logbook .profession div.requirementcheck {
+	/*checkboxcomponent logbuch page 3*/
+	width:560px;
+}
+#logbook div.checkboxcomponent div label {
+  padding-left: 15px;
+  width:90%;/*logbook page 3*/
+}
+#logbook div.checkboxcomponent div input {
+  width: auto; 
+}
+#logbook h2.ignore {
+  text-decoration: line-through;
+  background-color: #e6e6e6;
+}
+#logbook h2.favorite {
+  background-color: #99cc66;
+}
+#logbook div.overview div.stat {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#logbook div.overview div.stat div {
+  clear: none;float: left;
+}
+#logbook div.overview div.stat div div {
+  clear: none;float: left;
+  padding: 1px;
+  border: 1px solid gray;
+}
+#logbook div.overview div.stat div div span {
+  clear: both;font-size: 11px;display: block;
+}
+#logbook div.overview div.stat div div div {
+  padding: 0;border: 1px solid gray;
+}
+#logbook div.overview div.stat div div div div {
+	width: 100%; height: 100%; 
+	line-height: 0;border: 0; 
+	border-top:14px solid #FFF;
+}
+#logbook div.overview div.stat div div div div.stat_done {
+	border-top:14px solid green;
+}
+#logbook div.overview div.stat div div div div.stat_reject {
+	border-top:14px solid red;
+}
+#logbook div.overview div.stat img {
+  clear: none;
+  float: left; 
+}
+
+
+/* 
+	JF 03.06.2009
+	s�jours linguistiques sur internet
+*/
+.wablist .emptyTD
+{
+	width:7px;
+}
+
+.wablist .boldTD
+{font-weight:bold;text-align: left; vertical-align: top; padding-right: 10px;}
+
+.wablist .titleSejourCertif { text-align: left; font-weight: bold; 
+font-size: 13px; }
+
+
+/*
+	FORUM
+*/
+#bbnet .forum
+{
+	width:100%;
+}
+
+#bbnet .forum td
+{
+	text-align: left; 
+	padding-right: 10px;
+	padding-top:0px;
+}
+
+#bbnet td.item
+{
+	padding-bottom:15px;
+	padding-top:0px;
+	
+}
+
+
+#bbnet td.form
+{
+	width:20px;
+	margin-right:0px;
+	padding-right:0px;
+}
+
+#bbnet a.list
+{
+	display: block; 
+	clear: both; 
+	padding-bottom:0px;
+}
+
+#bbnet .question
+{
+	font-style:italic;
+}
+#bbnet a.websearch_nav
+{
+	padding: 0 4px;
+	margin: 0 2px;
+	display: inline;
+}
+#bbnet .websearch_number, #bbnet a.websearch_number
+{
+	padding: 0 4px;
+	margin: 0 2px;
+	display: inline;
+	font-weight: bold;
+	background-color: #CCCCCC;
+}
+#bbnet h2.edoc {
+	margin-bottom: 5px;
+}
+
+/* datatable */
+div.datatable { width: 100%; position: relative; padding-bottom: 15px; }
+div.datatable div.note { background-color: #8BB1D8; color: white; background-image: url(../img/icon_infomessage.png); background-position: 2px 2px; background-repeat: no-repeat; margin-bottom: 6px; padding: 3px 2px 2px 22px; min-height: 13px; }
+div.datatable table { width: 100%; }
+#bbnet div.datatable table table { width:100%; }
+div.datatable table thead { background-color: #E6E6E6; color:#006633; }
+div.datatable table thead th, div.datatable table tfoot th { text-align: left; vertical-align: top; padding: 2px 5px; font-weight: bold; border: 1px solid #CCCCCC; border-left: none; }
+div.datatable table thead th table th { padding: 0; margin: 0; border: none; }
+div.datatable table thead th table th { white-space: nowrap; }
+div.datatable table thead th table th.order, div.horizontal_datatable table td.recordcolumns table th.order, th.drag_sortabletablecolumn table th.order { padding-left: 3px; text-align: right; vertical-align: middle; }
+div.datatable table thead th table th.order a, th.drag_sortabletablecolumn table th.order a { margin-left: 2px; }
+div.datatable table thead th.recordsetnavigation { background-color: #BDBDBD; border: none; border-bottom: 1px solid white; font-weight: normal; }
+div.datatable table tfoot th.recordsetnavigation { background-color: #BDBDBD; border: none; border-top: 1px solid white; font-weight: normal; }
+div.datatable table tbody td { padding: 2px 5px; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; text-align: left; vertical-align: top; empty-cells: show; }
+div.datatable table tbody tr.firstrow td { border-top: none; }
+/* paging */
+div.datatable table thead th.recordsetnavigation div.paging, div.datatable table tfoot th.recordsetnavigation div.paging { float: left; white-space: nowrap; }
+div.datatable table thead th.recordsetnavigation div.paging img, div.datatable table tfoot th.recordsetnavigation div.paging img { padding-right: 2px; }
+div.datatable table thead th.recordsetnavigation div.paginginfo, div.datatable table tfoot th.recordsetnavigation div.paginginfo { float: left; margin-left: 10px; white-space: nowrap; }
+div.datatable table thead th.recordsetnavigation div.pagingsize, div.datatable table tfoot th.recordsetnavigation div.pagingsize { float: right; white-space: nowrap; }
+/* buttons */
+div.datatable table tfoot tr.buttonrow td { padding: 10px 0 0 0; white-space: nowrap; }
+div.datatable table tfoot tr.buttonrow td a, div.datatable table tfoot tr.buttonrow td img { margin: 0 5px 0 0; }
+/* modified/deleted records */
+div.datatable table tbody tr.deleted td.action input, div.datatable table tbody tr.deleted td.action img { display: none; }
+div.datatable table tbody tr.modified td { background-color: #D6D6D6; }
+div.datatable table tbody tr.deleted td { background-color: transparent; text-decoration: line-through; }
+div.datatable table tbody tr:hover td,
+div.datatable table tbody tr.iehover td,
+div.datatable table tbody tr.deleted:hover td,
+div.datatable table tbody tr.modified:hover td {
+	background-color: #CCE5FF;
+}
+#bbnet td.marginal a.comparelink {margin-bottom: 15px;font-weight: bold; }
+#bbnet.compare_table h1 {width:100%; background-color:#99CC66;}
+#bbnet.compare_table table table {font-size:11px;width: 100%; }
+#bbnet.compare_table table table td a {word-break:break-all; } /* LM 30.08.2011 TODO 1276: Uni Info, compare selected */
+#bbnet.compare_table table td {vertical-align: top; } /* LM 30.08.2011 TODO 1276: Uni Info, compare selected. When print and page break, align td on top */
+#bbnet.compare_table table table .recordcolumns { width:160px; text-align:left; }
+#bbnet.compare_table table table .recordcolumns  th { text-align:left; }
+#bbnet.compare_table table table .recordcolumns  th.order { text-align:right; }
+#bbnet.compare_table table table .recordcolumns  th.title1 { font-size:13px; } /* LM 30.08.2011 TODO 1276: Uni Info, compare selected */
+#bbnet.compare_table table table .recordcolumns  th.title2 { margin-left:5px; font-style:italic; } /* LM 30.08.2011 TODO 1276: Uni Info, compare selected */
+
+span#galleryTitleText{font-weight:bold;}
+span#galleryDescriptionText{}
+img#currentImageInGallery{width:358px; cursor: pointer;}
+.imageGallery_thumbnail{position:relative;width:57px; height:57px; cursor:pointer; margin-right:3px !important; margin-bottom:3px !important;}
+div#imagegallery_navigation{}
+div#imagegallery_navigationholder{width:360px;}
+div#imageGalleryBigImage{background:#000; cursor: pointer;}
+div#imageGalleryBigImageImage{cursor: pointer;}
+div#imageGalleryBigImageNavigation{overflow: auto; text-align: center;}
+div#lightboxpanel {width:300px;padding:10px;}
+div#lightboxpanel .controll img {display:block;float:left;height:20px;width:20px;cursor:pointer;background-color:#FFF;}
+
+/* JF 
+fix IE bug with img embedded into link's tag
+*/
+a img
+{
+border: none;
+} 
+
+/*--------------------------------------------*/
+/* button create alert email
+---------------------------------------------- */
+.button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin-right: 3px ;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+
+}
+
+.bigrounded {
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+.medium {
+	font-size: 12px;
+	padding: .4em 1.5em .42em;
+}
+.small {
+	font-size: 11px;
+	padding: .2em 1em .275em;
+}
+.white {
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+.white:hover {
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+}
+.white:active {
+	color: #999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+	background: -moz-linear-gradient(top,  #ededed,  #fff);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+}
+
+/*------*/
+
+
+.button_create_alert {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:3px;
+	text-decoration:none;
+	margin:0;
+	/*text-shadow:1px 1px 0px #ffffff;*/
+}.button_create_alert:hover {
+	background-color:#dfdfdf;
+	text-decoration:none;
+}.button_create_alert:active {
+	position:relative;
+	top:1px;
+}
+/* This imageless css button was generated by CSSButtonGenerator.com */
+
+/* This imageless css button was generated by CSSButtonGenerator.com */
+
+.truncate_on {
+	width: 250px;height: 35px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-decoration: underline;
+	cursor: pointer;
+	display: block;
+}
+.truncate_off {}
+

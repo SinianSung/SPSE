@@ -1,0 +1,88 @@
+/* -----------------------------------------------------------------------
+   Berufswahl
+----------------------------------------------------------------------- */
+.title-01-gen 		{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #CC3300	}
+
+.nav-gen-on			{ color: #CC3300; font-weight: bold; text-decoration: none }
+.nav-gen-on-sub		{ color: #FFFFCC; font-weight: bold; text-decoration: none }
+.nav-gen				{ color: #CC3300; text-decoration: none }
+
+a.nav-gen			{ color: #CC3300; font-weight: normal; text-decoration: none }
+a.nav-gen:visited	{ color: #CC3300 }
+a.nav-gen:hover		{ text-decoration: underline }
+
+a.link-gen			{ color: #CC3300; font-weight: bold; text-decoration: none }
+a.link-gen:visited	{ color: #CC3300 }
+a.link-gen:hover		{ text-decoration: underline; }
+
+a.link-context			{ color: #CC3300; font-weight: bold; text-decoration: none ; font-size: 10px }
+a.link-context:visited	{ color: #CC3300 }
+a.link-context:hover		{ text-decoration: underline; }
+
+a.ank-gen			{ color: #CC3300; font-weight: normal; text-decoration: none; font-size: 10px }
+a.ank-gen:visited	{ color: #CC3300 }
+a.ank-gen:hover		{ text-decoration: underline }
+
+.print-title-01-gen {
+font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #CC3300
+}
+
+.vorgabe	{font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; background-color:#ffffbb; padding:8px; margin-top:10px; margin-bottom:30px}
+
+/*--- Extended by fugu --- */
+.header { background-color: #FFCC00; }
+.marginal { background-color: #FFFFCC; }
+
+a			{ color: #CC3300; font-weight: bold; text-decoration: none }
+a:visited	{ color: #CC3300 }
+a:hover		{ text-decoration: underline }
+.checkboxcomponent textarea {width:255px;}
+.checkboxcomponent textarea.marginal {margin-right:10px;}
+/*--- Extended by fugu --- */
+
+/*--- myOrientation --- */
+.zoneconsigne	{font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; background-color:#ffffbb; padding:8px; margin-top:10px; margin-bottom:30px}
+.zonejournal	{font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; background-color:#FFEBCD; padding:8px; margin-top:30px; margin-bottom:20px}
+
+div.smiley1, div.smiley2, div.smiley3, div.smiley4, div.smiley5, div.smiley6, div.smiley7 {
+	background-repeat: no-repeat;
+	background-position: -4px top;
+	padding: 1px 0 0 60px;
+	height: 38px;
+	margin: 24px 0 8px 0;
+}
+div.smiley1 {
+	background-image: url(../dyn/pics/22399-25097-1-schritt_1_klein_abstand.gif);
+	
+}
+div.smiley2 {
+	background-image: url(../dyn/pics/22399-25141-1-schritt_2_klein_abstand.gif);
+}
+div.smiley3 {
+	background-image: url(../dyn/pics/22399-25142-1-schritt_3_klein_abstand.gif);
+}
+div.smiley4 {
+	background-image: url(../dyn/pics/22399-25143-1-schritt_4_klein_abstand.gif);
+}
+div.smiley5 {
+	background-image: url(../dyn/pics/22399-25144-1-schritt_5_klein_abstand.gif);
+}
+div.smiley6 {
+	background-image: url(../dyn/pics/22399-25145-1-schritt_6_klein_abstand.gif);
+}
+div.smiley7 {
+	background-image: url(../dyn/pics/22399-25146-1-schritt_7_klein_abstand.gif);
+}
+div.notopmargin, div.smiley1:first-child, div.smiley2:first-child, div.smiley3:first-child, div.smiley4:first-child, div.smiley5:first-child, div.smiley6:first-child, div.smiley7:first-child {
+	margin-top: 0;	
+}
+
+h3.kleinpfeil {
+	background-image: url(../dyn/pics/22399-25088-1-kleinpfeil.gif);
+	background-repeat: no-repeat;
+	padding: 0 0 0 21px;
+	margin-bottom: 0;
+	margin-top: 9px;
+}
+/*--- myOrientation --- */
+

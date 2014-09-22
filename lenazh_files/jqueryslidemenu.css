@@ -1,0 +1,156 @@
+.jqueryslidemenu{
+
+width: auto;
+float:right;
+color:white;
+}
+
+.jqueryslidemenu ul{
+margin: 0;
+padding: 0;
+list-style-type:none;
+
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display: block;
+float: left;
+z-index:100;
+}
+
+/*Top level menu link items style*/
+/*background of tabs (default state)*/
+.jqueryslidemenu ul li a{
+display: block;
+background: white; 
+color: Black;
+padding: 2px 6px;
+/*border-right: 1px solid #778;*/
+text-decoration: none;
+font:normal normal 11px Arial;
+
+}
+
+/* top level menu items style */
+.jqueryslidemenu ul li span{
+display: block;
+background: white; /*background of tabs (default state)*/
+color: Black;
+padding: 2px 6px;
+/*border-right: 1px solid #778;*/
+text-decoration: none;
+font:normal normal 11px Arial;
+}
+
+
+* html .jqueryslidemenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li  a:visited{
+color: black;
+text-decoration:none;
+}
+
+.jqueryslidemenu ul li a:hover, .jqueryslidemenu ul li span a:hover{
+background: white; /*tab link background during hover state*/
+color: black;
+text-decoration:none;
+}
+	
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul{
+position: absolute;
+left: 0;
+display: block;
+visibility: hidden;
+text-align:left;
+display: list-item;
+float: none;
+left:0px;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li{
+display: list-item;
+float: none;
+left:0px;
+background:white;
+width:170px;
+padding: 0px 0px;
+}
+
+.jqueryslidemenu ul li ul li.small {
+display: list-item;
+float: none;
+left:0px;
+background:white;
+width:auto;
+padding: 0px 0px;
+}
+
+
+.jqueryslidemenu ul li ul li.small  a.item{
+width:100px;
+display:inline-block;
+background-color:white;
+}
+
+.jqueryslidemenu ul li ul li a, .jqueryslidemenu ul li ul li span{
+display:inline;
+background:transparent;
+
+
+}
+
+
+.jqueryslidemenu ul li ul li a.item{
+	width:135px;
+	display:inline-block;
+	background-color:white;
+	
+/*
+_background:blue;
+_width:100px;
+*/
+}
+
+.jqueryslidemenu ul li ul li a.alert_delete {
+	background:white;
+	width:10px;
+	margin-right:0px;
+	
+/*
+	_background:brown;
+	_width:5px;
+	_float:right;
+	_clear:right;
+*/
+}
+
+.jqueryslidemenu ul li ul li a span {
+padding: 0px 0px;
+
+}
+
+
+/**/
+.jqueryslidemenu ul li ul li span a{
+	font: normal 10px Arial;
+	width: 120px; 
+	padding:2px;
+	display:inline-block;
+}
+
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: 4px;
+right: 7px;
+}
+
+

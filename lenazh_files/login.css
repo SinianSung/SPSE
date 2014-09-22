@@ -1,0 +1,211 @@
+/*
+	JF for LOGIN
+	style for <div id=error_msg></div> in every modal login forms
+	Don't define a class named "link_login". It's already used in code because of jQuery Selector $('.link_login')
+*/
+
+.login, .login:hover, .login:visited
+{
+	color:#336699;	
+	font:normal normal 11px Arial;
+	text-decoration:none;
+}
+
+/*div in aspx file*/
+.block
+{
+	display:none;
+	cursor:default;
+	position:relative;
+	z-index:1000;
+	
+}
+
+#load_form .block, #edit_form .block
+{
+	display:none;
+	cursor:default;
+	position:relative;
+	/*overflow:auto;*/
+}
+
+/* div for displaying msg*/
+#load_msg, #load_msg_login
+{
+	color:Red;
+	font-weight:bold;
+	height:40px;
+	display:none;
+	padding-top:10px;
+	font-size:11px;
+}
+
+/* div for msgbox window*/
+#msgbox
+{
+	text-align:center;
+	width:250px;
+}
+
+#msgbox h1
+{
+	font-size:larger;
+}
+
+/* link for inscription/login */
+#link_login
+{
+	color:Black;
+	text-decoration:none;
+	font-weight:lighter;
+}
+
+/* menu div in edit mode*/
+#navigation
+{
+	_width:100px;
+	font-size:14px;
+	vertical-align:top;
+	text-align:left;
+	padding:10px;
+	
+}
+
+/* content div in edit mode*/
+#content
+{
+	padding-left:20px;
+	vertical-align:top;
+	width:300px;
+	background-color:#fff;
+}
+
+
+div.box_menu, div.box_menu a:visited, div.box_menu a:hover, div.navmenu a
+{
+	margin-bottom:25px;
+	color:#336699;
+	font-weight:normal;
+	text-decoration:none;
+
+}
+
+
+div.navsubmenu
+{
+	margin:10px;
+}
+
+
+/* save-close-x buttons */
+#buttons
+{
+	position:relative;
+	_display:inline-block;
+	_text-align:right;
+}
+	
+
+#yes, #no
+{
+	width:40px;
+}
+
+
+
+div.buttons #left a, #buttons #left a
+{
+	float:left;
+	text-align:left;
+	width:50px;
+	
+	
+}
+
+
+#finish, #cancel
+{
+	float:left;
+	width:50px;
+}
+
+#right
+{
+	float:right;
+	margin-right:3px;
+}
+
+
+div.login_form_title, div.login_form_title h1
+{
+	height:auto;
+	padding-top:4px;
+	padding-bottom:4px;
+	width:100%;
+	_vertical-align:middle;
+	margin-bottom:10px;
+	_background-color:Red;
+}
+
+#img_close, #img_close_login
+{
+	position:absolute;
+	top: 0px;
+	right:4px;
+}
+
+#list_services li
+{
+	margin-top:10px;
+}
+
+fieldset
+{
+	padding:10px;
+	width:270px;
+}
+
+
+
+#info_msg
+{
+	color:red;
+	font-weight:bold;
+	font-size:11px;
+}
+
+#name_alert, #name_bookmark
+{
+	width:300px;
+}
+
+#parent
+{
+	text-align:justify;
+	padding-top:5px;
+	width:400px;
+	font-size:11px;
+}
+
+#btn_save_bookmark, #btn_save_alert {
+	padding-top:15px !important;
+	padding-top:0px ;
+	text-align:justify;
+	
+	width:400px;
+	font-size:11px;
+}
+
+
+#info_alert, #info_bookmark
+{
+	width:300px;
+	float:left;
+}
+
+.scroll
+{
+	height:400px;
+	overflow:auto;
+}
+
