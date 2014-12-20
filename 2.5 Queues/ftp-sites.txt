@@ -1,0 +1,12 @@
+ftp://ftp.ceag.ch/
+ftp://ftp.astro.ch/
+ftp://ftp.fourmilab.ch/
+ftp://ftp.fastnet.ch/
+ftp://ftp.imp.ch/
+ftp://ftp.ifor.math.ethz.ch/
+ftp://ftp.inf.ethz.ch/
+ftp://ftp.math.ethz.ch/
+ftp://root.cern.ch/
+ftp://ftp.cc.ac.cn/
+ftp://ftp.aopen.com.cn/
+ftp://ftp.pku.edu.cn/
